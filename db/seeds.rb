@@ -9,7 +9,7 @@
 
 # require 'open-uri'
 
-# Cocktail.destroy_all
+ Cocktail.destroy_all
 # puts "#{Ingredient.all.count}"
 
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
