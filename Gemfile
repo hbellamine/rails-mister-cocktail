@@ -7,6 +7,7 @@ gem 'nokogiri'
 gem 'json'
 
 gem 'select2-rails'
+gem 'chart-js-rails'
 
 gem 'pry-byebug'
 gem 'dotenv-rails', groups: [:development, :test]

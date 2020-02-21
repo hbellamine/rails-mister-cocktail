@@ -10,8 +10,13 @@
 
 }
 
-img-rounded .hover{
+.img-rounded{
+transition: transform .2s;
+}
+.img-rounded .hover{
   text-decoration:none;
+  transform: scale(1.5);
+
 }
 
 
