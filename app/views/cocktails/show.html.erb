@@ -10,7 +10,7 @@
   <div class="container-ingredient">
 
       <div id="img-show-ingredients">
-     <%= image_tag(@cocktail.url, class: "img-create") %>
+    <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill, class: "img-rounded" %>
       </div>
 
       <div id="description-dose">

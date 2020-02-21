@@ -15,7 +15,7 @@
       </div>
       <div class="modal-body">
         <%= image_tag("https://cdn.jewishboston.com/uploads/2018/08/iStock-928321242-729x486.jpg", class: "img-create-modal") %>
-        <%= f.input :url %>
+        <%= f.input :photo, as: :file %>
         <%=f.input :name %>
       </div>
       <div class="modal-footer">
