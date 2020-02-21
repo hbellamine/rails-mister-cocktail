@@ -1,0 +1,32 @@
+<%= render partial: '/components/banner' %>
+<div id="title-show">
+  <h1><%=@cocktail.name %></h1>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+   Add an ingredient
+  </button>
+  </div>
+</div>
+
+  <div class="container-ingredient">
+
+      <div id="img-show-ingredients">
+     <%= image_tag(@cocktail.url, class: "img-create") %>
+      </div>
+
+      <div id="description-dose">
+        <h1>Ingredients</h1>
+      <% @cocktail.doses.each do |dose| %>
+      <i class="fas fa-plus-circle"></i> <%= dose.ingredient.name %>&ndash; <%= dose.description %> <%= link_to "delete", dose_path(dose.id), method: :delete %><br>
+      <%end%>
+    </div>
+  </div>
+
+
+
+
+<%= render partial: '/components/addingredient' %>
+
+<%= link_to "<= Back",cocktails_path, :class => "btn btn-primary" %>
+
+
+

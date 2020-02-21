@@ -1,0 +1,32 @@
+
+.grid-container{
+
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.img-create {
+  border-radius: 20px;
+    width: 100%;
+  object-fit: cover;
+  width: 600px;
+  height:auto;
+  box-shadow: 2px 2px 2px lightgray;
+  padding-bottom: 100 px;
+}
+
+#description-dose{
+  color:black;
+  font-size:30px;
+      text-decoration: none;
+    font-family: dosis;
+
+    margin-left:20px;
+}
+
+.h1{
+color : white;
+text-align: center;
+
+}

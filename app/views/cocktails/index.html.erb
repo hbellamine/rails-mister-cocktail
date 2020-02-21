@@ -1,0 +1,18 @@
+<%= render partial: '/components/banner' %>
+   <div class="h1">Best Cocktails on <strong>earth</strong></div>
+  </div>
+
+
+
+<center><%= render partial: '/components/addcocktail' %></center>
+<div class="grid-container">
+  <% @cocktails.each do |cocktail| %>
+  <div class="card-trip">
+    <%=link_to image_tag(cocktail.url), cocktail_path(cocktail), class: "img-rounded"%>
+      <h1><i class="fas fa-cocktail"></i><%= link_to cocktail.name, cocktail_path(cocktail) %><h1>
+
+  </div>
+  <%end%>
+</div>
+
+
