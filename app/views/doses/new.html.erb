@@ -1,3 +1,4 @@
+<%= render partial: '/components/navbar' %>
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
   Create a new cocktail
 </button>
@@ -27,17 +28,9 @@
   <%end%>
 </div>
 
+<%= render partial: '/components/footer' %>
 
 
 
 
 
-
-<!--   <div class="container">
-        <%= simple_form_for [@cocktail, @dose] do |f| %>
-        <%=f.input :description %>
-        <%= f.association :ingredient %>
-        <%=f.submit%>
-        <% end %>
-  </div>
-</div> -->

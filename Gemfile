@@ -6,6 +6,8 @@ ruby '2.6.5'
 gem 'nokogiri'
 gem 'json'
 
+gem 'select2-rails'
+
 gem 'pry-byebug'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.12.0'
