@@ -1,4 +1,6 @@
 .banner {
+      width: 100%;
+  height: auto;
   background-size: cover;
   background-position: center;
   padding: 150px 0;
@@ -7,6 +9,8 @@
 }
 
 .banner h1 {
+      width: 100%;
+  height: auto;
   margin: 0;
   margin-right: 20px;
   color: white;
@@ -16,6 +20,8 @@
 }
 
 .banner p {
+        width: 100%;
+  height: auto;
   font-size: 20px;
   color: white;
   opacity: .7;
@@ -23,6 +29,8 @@
 }
 
 #addingredient a{
+        width: 100%;
+  height: auto;
   color: white;
   text-decoration: none;
 }

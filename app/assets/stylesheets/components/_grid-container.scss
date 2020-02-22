@@ -10,14 +10,16 @@
 
 }
 
-.img-rounded{
-transition: transform .2s;
-}
-.img-rounded .hover{
-  text-decoration:none;
-  transform: scale(1.5);
+.img-show{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
 
 }
+
+
 
 
 .img-create {
@@ -31,6 +33,8 @@ transition: transform .2s;
 }
 
 #description-dose{
+    width: 100%;
+  height: auto;
   color:black;
   font-size:30px;
       text-decoration: none;
