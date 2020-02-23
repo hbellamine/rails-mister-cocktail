@@ -1,0 +1,30 @@
+<%= render partial: '/components/navbar' %>
+<%= render partial: '/components/banner' %>
+   <div class="h1">Best Cocktails on <strong>earth</strong></div>
+  </div>
+
+
+
+<div class="grid-container">
+
+  <% @cocktails.each do |cocktail| %>
+  <div class="card-trip">
+    <%=link_to cocktail_path(cocktail), class: "img-rounded" do %>
+      <% if cocktail.photo.attached? %>
+        <%= cl_image_tag cocktail.photo.key, height: 300, width: 400, crop: :fill, class: "img-rounded" %>
+      <% end %>
+      <h1 id="cocktailname"><i class="fas fa-cocktail"></i><%= cocktail.name %>
+        <%= link_to cocktail_path(cocktail.id), method: :delete do %>
+          <i class="fas fa-trash-alt bin"></i>
+        <%end%>
+      </h1>
+    <% end %>
+  </div>
+  <%end%>
+</div>
+
+
+
+<%= render partial: '/components/footer' %>
+
+
