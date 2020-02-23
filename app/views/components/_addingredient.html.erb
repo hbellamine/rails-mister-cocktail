@@ -18,7 +18,7 @@
 
         <div class="modal-body">
           <%= image_tag("https://image.freepik.com/free-photo/handsome-bartender-making-drinking-cocktails-counter_1303-19777.jpg", class: "img-create-modal") %>
-          <%=f.input :description %>
+          <%=f.input :description, :label=>"Dose in cl" %>
           <%= f.association :ingredient %>
         </div>
 

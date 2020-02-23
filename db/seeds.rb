@@ -9,7 +9,7 @@
 
 # require 'open-uri'
 
- Cocktail.destroy_all
+ Ingredient.destroy_all
 # puts "#{Ingredient.all.count}"
 
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
@@ -17,7 +17,8 @@ cocktails_serialized = open(url).read
 cocktails = JSON.parse(cocktails_serialized)
 
 cocktails.values[0].each do |ingredient|
-  Ingredient.create(name: ingredient.values[0])
+  uc = (((rand()/12) * 10**2).ceil.to_f / 10**2)
+  Ingredient.create(name: ingredient.values[0] + "- u.price :" + uc.to_s, unitprice: uc)
 end
 
 # puts "#{Ingredient.all.count}"
