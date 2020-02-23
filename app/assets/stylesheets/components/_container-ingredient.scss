@@ -4,6 +4,17 @@ margin-bottom: 50px;
 background-color:white;
 }
 
+@media screen and (max-width: 601px) {
+.container-ingredient {
+  display: flex;
+  flex-direction: column;
+margin-bottom: 50px;
+background-color:white;
+}
+
+
+  }
+
 #titleing{
  background-color:rgba(31, 229, 189,0.2);
  margin-left:-20px;

@@ -10,12 +10,12 @@
   <div class="container-ingredient">
 
       <div id="img-show-ingredients">
-    <%= cl_image_tag @cocktail.photo.key, crop: :fill, class: "img-show" %>
+        <%= cl_image_tag @cocktail.photo.key, crop: :fill, class: "img-show" %>
       </div>
-      <% @cocktail.price= 0%>
+        <% @cocktail.price= 0%>
       <div id="description-dose">
         <h2 id="titleing">Ingredients</h2>
-      <table>
+        <table>
         <thead>
           <tr>
             <th>Ingredient</th>
@@ -24,8 +24,7 @@
             <th>Delete?</th>
           </tr>
         </thead>
-          <tbody>
-
+        <tbody>
             <% @cocktail.doses.each do |dose| %>
             <tr>
             <% ingprice=((((dose.ingredient.unitprice * dose.description))*10**2).ceil.to_f / 10**2)%>
@@ -33,7 +32,7 @@
             <% @cocktail.price += ingprice%>
             </tr>
             <%end%>
-          </tbody>
+         </tbody>
         </table>
 
       <h1 id="pricetag">Cocktail price : <%= (((@cocktail.price)*10**2).ceil.to_f / 10**2) %> € </h1>
