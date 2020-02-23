@@ -1,3 +1,30 @@
+@media screen and (max-width: 601px) {
+
+td {
+  font-size:10px;
+  padding:0 5px;
+}
+
+th {
+  font-size:10px;
+  padding:0 3px;
+}
+.btn-danger{
+width:60px;
+height:70%
+}
+
+#pricetag {
+  padding-top: 5px;
+  font-size:20px;
+}
+
+#ingname {
+  margin-right: 12px;
+}
+}
+
+
 td {
     padding:0 20px;
 }

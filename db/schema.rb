@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_23_090451) do
+ActiveRecord::Schema.define(version: 2020_02_23_181937) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -61,7 +61,15 @@ ActiveRecord::Schema.define(version: 2020_02_23_090451) do
     t.float "unitprice"
   end
 
+  create_table "orders", force: :cascade do |t|
+    t.bigint "cocktail_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["cocktail_id"], name: "index_orders_on_cocktail_id"
+  end
+
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "doses", "cocktails"
   add_foreign_key "doses", "ingredients"
+  add_foreign_key "orders", "cocktails"
 end
