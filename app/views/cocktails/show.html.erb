@@ -14,7 +14,7 @@
       </div>
 
       <div id="description-dose">
-        <h2>Ingredients</h2>
+        <h2 id="titleing">Ingredients</h2>
       <% @cocktail.doses.each do |dose| %>
       <h5><i class="fas fa-plus-circle"></i> <%= dose.ingredient.name %>&ndash; <%= dose.description %> <%= link_to "delete", dose_path(dose.id), method: :delete %></h5>
       <%end%>

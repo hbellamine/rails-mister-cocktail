@@ -10,4 +10,6 @@ Rails.application.routes.draw do
 
   resources :doses, only: [:destroy]
 
+  get '/search' => 'cocktails#search', :as => 'search_page'
+
 end
